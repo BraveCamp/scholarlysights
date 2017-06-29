@@ -1,0 +1,200 @@
+<div class="bg-faded p-4 my-4">
+            <hr class="divider">
+            <h2 class="text-center text-lg text-uppercase my-0">Teaching: Seminars <strong>Form</strong></h2>
+            <hr class="divider">
+            <form>
+                <div class="row">
+                    <div class="form-group col-lg-4">
+                        <label class="text-heading">Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label class="text-heading">Email Address</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label class="text-heading">Phone Number</label>
+                        <input type="tel" class="form-control">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="form-group col-lg-12">
+                        <label class="text-heading">Message</label>
+                        <textarea class="form-control" rows="6"></textarea>
+                    </div>
+                    <div class="form-group col-lg-12">
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- this was the section of code that allowed people to put in their name and email and a message but I decided to delete it becasue a) i didnt want to code that b) i didnt really have a need for that information. --> 
+
+
+
+
+
+         <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+
+    <!--pin point for google maps -->
+
+
+
+
+    var myOptions = {
+        zoom: 15,
+        center: new google.maps.LatLng(41.88,-87.62),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+    
+    var infowindow =  new google.maps.InfoWindow({
+        content: ''
+    });
+    
+    // loop over our array
+    for (i = 0; i < arrDestinations.length; i++) {
+        // create a marker
+        var marker = new google.maps.Marker({
+            title: arrDestinations[i].title,
+            position: new google.maps.LatLng(arrDestinations[i].lat, arrDestinations[i].lon),
+            map: map
+        });
+
+
+
+
+
+
+          <script type="text/javascript">
+function initialize() {
+    var i;
+    var arrDestinations = [
+        {
+            lat: 41.7886, 
+            lon: -87.5987, 
+            title: "University of Chicago", 
+            description: "Brighton Palace Pier dates to 1899"
+        },
+        {
+            lat: 41.8926, 
+            lon: -87.6367, 
+            title: "Number Two", 
+            description: "The Pavilion was built for the Prince of Wales in 1787"
+        },
+        {
+            lat: 41.8865, 
+            lon: -87.6299, 
+            title: "three", 
+            description: "English's Seafood Restaurant and Oyster Bar"
+        }
+        {
+            lat: 41.8801, 
+            lon: -87.6247, 
+            title: "four", 
+            description: "English's Seafood Restaurant and Oyster Bar"
+        }
+        {
+            lat: 41.8750, 
+            lon: -87.6270, 
+            title: "five", 
+            description: "English's Seafood Restaurant and Oyster Bar"
+        }
+    ];
+    
+    var myOptions = {
+        zoom: 15,
+        center: new google.maps.LatLng(41.88,-87.62),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+    
+    var infowindow =  new google.maps.InfoWindow({
+        content: ''
+    });
+    
+    // loop over our array
+    for (i = 0; i < arrDestinations.length; i++) {
+        // create a marker
+        var marker = new google.maps.Marker({
+            title: arrDestinations[i].title,
+            position: new google.maps.LatLng(arrDestinations[i].lat, arrDestinations[i].lon),
+            map: map
+        });
+        
+        // add an event listener for this marker
+        bindInfoWindow(marker, map, infowindow, "<p>" + arrDestinations[i].description + "</p>");  
+    }
+}
+
+function bindInfoWindow(marker, map, infowindow, html) { 
+    google.maps.event.addListener(marker, 'click', function() { 
+        infowindow.setContent(html); 
+        infowindow.open(map, marker); 
+    }); 
+} 
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+
+
+
+
+
+
+ var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">University of Chicago</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>The University of Chicago</b>, holds teaching conferences, workshops, and seminars quartly to help grow teachers and students in their pursuits of knowledge.' +
+            'Phone: (773) 834 - 4439'+
+            'Email: teaching@college.uchicago.edu '+
+            'Address: Chicago Center for Teaching </p>'+
+            '<p>Attribution: University of Chicago, <a href="https://teaching.uchicago.edu/workshops-seminars/">'+
+            'https://teaching.uchicago.edu/workshops-seminars/=uchicago</a> '+
+            '(last visited June 29, 2017).</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
+         marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+
+
+
+
+
+        <div class="col-lg-4">
+                    <h5 class="mb-0">Phone:</h5>
+                    <div class="mb-4">123.456.7890</div>
+                    <h5 class="mb-0">Email:</h5>
+                    <div class="mb-4"><a href="mailto:name@example.com">name@example.com</a></div>
+                    <h5 class="mb-0">Address:</h5>
+                    <div class="mb-4">
+                        3481 Melrose Place
+                        <br> Beverly Hills, CA 90210
+                    </div>
+                </div>

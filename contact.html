@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Business Casual - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-casual.css" rel="stylesheet">
+<link href="css/map.css" rel="stylesheet">
+
+    <!-- Temporary navbar container fix -->
+    <style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
+    <script>
+      function initMap() {
+        var uluru1 = {lat: 41.7886, lng: -87.5987};
+        var uluru2 = {lat: 41.8926, lng: -87.6367};
+        var uluru3 = {lat: 41.8865, lng: -87.6299};
+        var uluru4 = {lat: 41.8801, lng: -87.6247};
+        var uluru5 = {lat: 41.8750, lng: -87.6270};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru1
+        });
+         var contentString1 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">University of Chicago</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>The University of Chicago</b>, holds teaching conferences, workshops, and seminars quartly to help grow teachers and students in their pursuits of knowledge.' +
+            'Phone: (773) 834 - 4439'+
+            'Email: teaching@college.uchicago.edu '+
+            'Address: Chicago Center for Teaching</p>'+
+            '<p>Attribution: University of Chicago, <a href="https://teaching.uchicago.edu/workshops-seminars/">'+
+            'https://teaching.uchicago.edu/workshops-seminars/=uchicago</a> '+
+            '(last visited June 29, 2017).</p>'+
+            '</div>'+
+            '</div>';
+
+        var infowindow1 = new google.maps.InfoWindow({
+          content: contentString1
+        });
+        var marker1 = new google.maps.Marker({
+          position: uluru1,
+          map: map,
+          title: 'University of Chicago'
+        });
+        marker1.addListener('click', function() {
+          infowindow1.open(map, marker1);
+        });
+        var contentString2 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">National Student Leadership Conference</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>The National Student Leaderhsip Conference</b>, holds teaching conferences, workshops, and seminars quartly to help grow teachers and students in their pursuits of knowledge.' +
+            'Phone: (773) 834 - 4439'+
+            'Email: teaching@college.uchicago.edu '+
+            'Address: Chicago Center for Teaching        Wieboldt Hall, 3rd Floor      1050 East 59th Street    Chicago, Illinois 60637</p>'+
+            '<p>Attribution: University of Chicago, <a href="https://teaching.uchicago.edu/workshops-seminars/">'+
+            'https://teaching.uchicago.edu/workshops-seminars/=uchicago</a> '+
+            '(last visited June 29, 2017).</p>'+
+            '</div>'+
+            '</div>';
+        var infowindow2 = new google.maps.InfoWindow({
+          content: contentString2
+        });
+        var marker2 = new google.maps.Marker({
+          position: uluru2,
+          map: map,
+          title: 'National Student Leadership Conference'
+        });
+        marker2.addListener('click', function() {
+          infowindow2.open(map, marker2);
+        });
+         var contentString3 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">ISACS</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>ISACS</b>, ISACS aims to help schools pursue excellece in independent education.' +
+            'Phone: 312-750-1190'+
+            'FAX: 312-750-1193'+
+            'Address: 55 West Wacker, Suite 701     Chicago, IL 60601</p>'+
+            '<p>Attribution: ISACS, <a href="http://www.isacs.org/page/472115_Conferences_and_Workshops.asp">'+
+            'http://www.isacs.org/page/472115_Conferences_and_Workshops.asp=isacs</a> '+
+            '(last visited June 29, 2017).</p>'+
+            '</div>'+
+            '</div>';
+        var infowindow3 = new google.maps.InfoWindow({
+          content: contentString3
+        });
+        var marker3 = new google.maps.Marker({
+          position: uluru3,
+          map: map,
+          title: 'ISACS'
+        });
+        marker3.addListener('click', function() {
+          infowindow3.open(map, marker3);
+        });
+         var contentString4 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">National Louis University</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>The National Louis University</b>, holds professional development institues yearly to provide teachers with the option for graduate credit and an increase in learning.' +
+            'Phone: 630-874-4533'+
+            'Email: mary.hoch@nl.edu  '+
+            'Address: 122 S. Michigan Ave.    Chicago, IL 60603/p>'+
+            '<p>Attribution: National Louis University, <a href="https://www.nl.edu/readingcenter/professionaldevelopment/">'+
+            'https://www.nl.edu/readingcenter/professionaldevelopment/=nationallouisuniversity</a> '+
+            '(last visited June 29, 2017).</p>'+
+            '</div>'+
+            '</div>';
+        var infowindow4 = new google.maps.InfoWindow({
+          content: contentString4
+        });
+        var marker4 = new google.maps.Marker({
+          position: uluru4,
+          map: map,
+          title: 'National Louis University'
+        });
+        marker4.addListener('click', function() {
+          infowindow4.open(map, marker4);
+        });
+         var contentString5 = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Conference Chicago</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Conference Chicago</b>, ' +
+            'Phone: 877.482.2463'+
+            'Email: info@universitycenter.com'+
+            'Address: 525 South State Street     Chicago,IL 60605</p>'+
+            '<p>Attribution: Conference Chicago, <a href="http://www.universitycenter.com">'+
+            'http://www.universitycenter.com=conferencechicago</a> '+
+            '(last visited June 29, 2017).</p>'+
+            '</div>'+
+            '</div>';
+        var infowindow5 = new google.maps.InfoWindow({
+          content: contentString5
+        });
+        var marker5 = new google.maps.Marker({
+          position: uluru5,
+          map: map,
+          title: 'Conference Chicago'
+        });
+        marker5.addListener('click', function() {
+          infowindow5.open(map, marker5);
+        });
+      }
+      
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm2quemCLcgSHKFoPIA_e-haZgyUzitBI&callback=initMap"chld=1|00FF00|000000>
+    </script>
+  
+</head>
+
+<body>
+
+    <div class="tagline-upper text-center text-heading text-shadow text-white mt-4 hidden-md-down">Scholarly Sight</div>
+    <div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-4 hidden-md-down">Aiming to better Chicago's education</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-toggleable-md navbar-light navbar-custom bg-faded py-lg-4">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand text-uppercase text-expanded font-weight-bold hidden-lg-up" href="#">Scholarly Sight</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item active px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="contact.html">Teaching: Seminars</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="bg-faded p-4 my-4">
+            <hr class="divider">
+            <h2 class="text-center text-lg text-uppercase my-0">Teaching: Seminars <strong>Education</strong></h2>
+            <hr class="divider">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="embed-responsive-16by9 map-container mb-4 mb-lg-0">
+                    <div id="map"></div>
+                        
+                        <!--iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Zoom when clicked function for Google Map -->
+    <script>
+    $('.map-container')
+        .click(function() {
+            $(this).find('iframe').addClass('clicked')
+        })
+        .mouseleave(function() {
+            $(this).find('iframe').removeClass('clicked')
+        });
+    </script>
+        <div class="container">
+
+        <div class="bg-faded p-4 my-4">
+            <div class="card card-inverse">
+                <img class="card-img img-fluid w-100" style="width: 1100px; height:450px;" src="https://farm1.staticflickr.com/51/106226535_3241bc3db7_z.jpg?zz=1" alt="">
+                <div class="card-img-overlay bg-overlay">
+                    <h2 class="card-title text-shadow text-uppercase mb-0">Professional Developments</h2>
+                    <h4 class="text-shadow text-white">Grow in Skills as You Teach</h4>
+                    <p class="lead card-text text-shadow text-white w-50 hidden-md-down">University of Chicago teaching seminars an workshops</p>
+                    <a href="https://teaching.uchicago.edu/workshops-seminars/" target="_blank" class="btn btn-secondary">Click Here</a>
+                    <p class="lead card-text text-shadow text-white w-50 hidden-md-down">ASCD conferences </p>
+                    <a href="http://www.ascd.org/conference-on-teaching-excellence.aspx?gclid=Cj0KEQjwp83KBRC2kev0tZzExLkBEiQAYxYXOkAIexoUQHObpKcsbpiM9skokrLDuVne4p9f08R6_CgaAhLw8P8HAQ" target="_blank" class="btn btn-secondary">Click Here</a>
+                    <p class="lead card-text text-shadow text-white w-50 hidden-md-down">Find conferences by state. </p>
+                    <a href="https://ber.org/seminars/index.cfm" target="_blank" class="btn btn-secondary">Click Here</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-faded p-4 my-4">
+            <div class="card card-inverse">
+                <img class="card-img img-fluid w-100" style="width: 1100px; height:400px;" src="https://farm1.staticflickr.com/51/106226535_3241bc3db7_z.jpg?zz=1" alt="">
+                <div class="card-img-overlay bg-overlay">
+                    <h2 class="card-title text-shadow text-uppercase mb-0">Webinars</h2>
+                    <h4 class="text-shadow text-white">Seminars at Home</h4>
+                    <p class="lead card-text text-shadow text-white w-50 hidden-md-down">Education Week</p>
+                    <a href="http://www.edweek.org/ew/marketplace/webinars/webinars.html" target="_blank" class="btn btn-secondary">Click Here</a>
+                    <p class="lead card-text text-shadow text-white w-50 hidden-md-down">ASCD Webinars</p>
+                    <a href="http://www.ascd.org/professional-development/webinars/ascd-webinar-archive.aspx" target="_blank" class="btn btn-secondary" >Click Here</a> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="bg-faded p-4 my-4">
+            <ul class="pagination justify-content-center mb-0">
+                <li class="page-item"><a class="page-link" href="#">&larr; Older</a></li>
+                <li class="page-item disabled"><a class="page-link" href="#">Newer &rarr;</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<footer class="bg-faded text-center py-5">
+        <div class="container">
+            <p class="m-0">Copyright &copy; Your Website 2017</p>
+        </div>
+    </footer>
